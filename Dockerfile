@@ -8,7 +8,7 @@ FROM node:16-slim
 WORKDIR /usr/src/app
 
 # 将项目文件复制到工作目录
-COPY ./blogChat .
+COPY . .
 
 # 安装项目依赖
 RUN npm install --production && npm cache clean --force
